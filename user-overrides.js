@@ -4,7 +4,7 @@ user_pref("identity.fxaccounts.enabled", false); // disable "Sync & Sign-in with
 
 user_pref("browser.toolbars.bookmarks.visibility", "always"); // always show favorites
 
-user_pref("media.videocontrols.picture-in-picture.video-toggle-enabled", false); // disable pip shotcut
+user_pref("media.videocontrols.picture-in-picture.video-toggle-enabled", false); // disable pip shortcut
 
 // https://www.reddit.com/r/firefox/comments/1lp9fsy/how_do_i_disable_ai_functionality_in_the_browser/
 user_pref("browser.ml.enable", false); // general switch for machine learning features in Firefox (https://www.reddit.com/r/firefox/comments/1obbrvz/how_to_completely_get_rid_of_the_ai_stuff/nki10g9/), though it might not completely disable all features (https://bugzilla.mozilla.org/show_bug.cgi?id=1971973#c11)
@@ -18,3 +18,7 @@ user_pref("browser.tabs.groups.smart.enabled", false); // "Use AI to suggest tab
 user_pref("browser.tabs.groups.smart.userEnabled", false);
 user_pref("pdfjs.enableAltTextModelDownload", false); // "This prevents downloading the AI model unless the user opts in (by enabling the toggle to "Create alt text automatically" from "Image alt text settings" when viewing a PDF)"
 user_pref("pdfjs.enableGuessAltText", false); // (disabling this might be redundant when AltTextModelDownload is disabled)
+
+// disable passwords, forms & stuff
+user_pref("signon.rememberSignons", false);
+user_pref("browser.formfill.enable", false);
