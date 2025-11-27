@@ -25,3 +25,7 @@ user_pref("browser.formfill.enable", false);
 
 // disable automatic translation popups
 user_pref("browser.translations.automaticallyPopup", false);
+
+// disable restoring session
+user_pref("browser.sessionstore.resume_from_crash", false);
+user_pref("browser.sessionstore.max_resumed_crashes", 0);
